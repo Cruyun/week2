@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>task3</title>
+    <style>
+  #content{
+    border: 1px solid;
+    width: 300px;
+    height: 400px;
+  }
+  ol{
+    counter-reset: li;
+    list-style: none;
+  }
+  ol li{
+    margin-top: 5px;
+  }
+  ol a{
+    font-family: 微软雅黑;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+  }
+  ol hr{
+    margin-left: auto;
+    margin-right: 40px;
+  }
+  ol a:before{
+    content:counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align:center;
+    border: 1px solid;
+  }
+  ol a:hover{
+    color: red;
+  }
+  </style>
+</head>
+<body>
+  <caption>图书畅销榜</capton>
+  <hr width="300px" align="left">
+  <div id="content">
+  <ol>
+    <li><a href="https://book.douban.com/subject/25852441/" title="当我足够好，才会遇到你">当我足够好，才会遇见你</a></li>
+  <hr size=1 style="color:black;border-style:dashed ;width:100%">
+    <li><a href="https://book.douban.com/subject/26278687/"title="皮囊">皮囊</a></li>
+  <hr size=1 style="color:black;border-style:dashed ;width:100%">
+    <li><a href="https://book.douban.com/subject/25730239/"title="李光耀论中国与世界">李光耀论中国与世界</a></li>
+  <hr size=1 style="color:black;border-style:dashed ;width:100%">
+    <li><a href="https://book.douban.com/subject/25984204/"title="乖，摸摸头">乖，摸摸头</a></li>
+  <hr size=1 style="color:black;border-style:dashed ;width:100%">
+    <li><a href="https://book.douban.com/subject/10779411/"title="男女内参">男女内参</a></li>
+</ol>
+</div>
+</body>
+</html>
